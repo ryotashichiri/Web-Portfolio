@@ -63,7 +63,7 @@ body{
 
 /* message */
 body {
-    min-height: 100vh;
+    min-height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
