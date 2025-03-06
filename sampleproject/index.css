@@ -1,0 +1,130 @@
+
+/* background */
+
+body{
+    background-image: url(12426.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+/* nav */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    z-index: 1000;
+    animation: typing 2s;
+
+}
+
+.logo {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 7px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.6s;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a:hover, .logo:hover {
+    color: #193f70;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 3s ease-in-out;
+}
+
+header div h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1, p {
+    color: rgb(0, 0, 0);
+}
+
+/* hero content */
+.button {
+
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #193f70;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: #193f70;
+    background-color: black;
+}
+
+.hero-content h1 {
+    overflow: hidden;
+    white-space: nowrap;	
+    animation: typing 3.5s;
+}
+
+#myphoto{
+    box-shadow: 0 0 10px 5px rgb(16, 52, 129);
+}
+
+/* Animation */
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,195 @@
+/* background */
+
+body{
+    background-image: url(12426.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+/* nav */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    z-index: 1000;
+    animation: typing 2s;
+
+}
+
+.logo {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 7px;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.8s;
+    
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a:hover, .logo:hover {
+    color: #193f70;
+}
+
+.h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.qualification {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeUp 2s;
+    font-size: 20px;
+    }
+
+.qualification h1 span {
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: .7px #151b29;
+    }
+    
+.qualification h1 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #151b29;
+    color: #151b29;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 5s linear infinite;
+    }
+    
+
+/* skills */
+
+.skill{
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeUp 2s;
+}
+
+.skills{
+    text-align: center;
+    margin-top: 0%;
+    animation: fadeUp 2s;
+}
+
+.skills h1{
+    text-align: center;
+}
+    
+    .skills{
+        text-align: center;
+        color: white;
+    background-color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 1, 1);
+    }
+
+/* project */
+
+.proj {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeUp 2s;
+}
+
+.profile{
+    text-align: center;
+}
+
+.project h1{
+    text-align: center;
+    color: white;
+    }
+    
+    .project{
+        text-align: center;
+        color: white;
+    background-color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 1, 1);
+    animation: fadeUp 2s;
+    height: auto;
+    }
+
+/* animation */
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fill-text {
+    10%, 100% {
+        width: 0;
+    }
+    78%, 90% {
+        width: 100%;
+    }
+}
